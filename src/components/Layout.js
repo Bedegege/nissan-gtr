@@ -24,12 +24,18 @@ const Layout = props => {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className="background">
       <NavBar />
       <main className={classes.mainWrap} style={{ minHeight: "100vh" }}>
         <Container maxWidth="lg">{props.children}</Container>
       </main>
-      <Footer />
+      <style jsx>{`
+        .background {
+          background-image: url('/skyline-homepage.png');
+          background-position: center;
+          background-size: cover;
+        }
+      `}</style>
     </div>
   );
 };

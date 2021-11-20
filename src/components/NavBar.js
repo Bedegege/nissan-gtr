@@ -42,8 +42,8 @@ const NavBar = () => {
             <Link href="/">
               <a>
                 <img
-                  style={{ paddingTop: 10, paddingBottom: 14, width: 55 }}
-                  src="/art.svg"
+                  style={{ paddingTop: 20, paddingBottom: 14, width: 200 }}
+                  src="/logo-skyline.png"
                   alt=""
                 />
               </a>
@@ -91,8 +91,7 @@ const NavBar = () => {
         .container {
           width: 100%;
           height: 88px;
-          background-color: #ffffff;
-          border: 1px solid #f0f2f5;
+          background-color: transparent;
           position: fixed;
           display: flex;
           z-index: 99;
