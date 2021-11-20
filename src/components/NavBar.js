@@ -9,14 +9,14 @@ import { Fragment } from "react";
 
 const navButtons = [
   {
-    label: "Home",
+    label: "History",
     path: "/"
   },
   {
-    label: "About Us"
+    label: "Performance"
   },
   {
-    label: "FAQ"
+    label: "Dealers"
   },
   {
     label: "News"
