@@ -1,5 +1,5 @@
 import {
-  Button,
+  ButtonBase,
   Grid,
   Container,
 } from "@material-ui/core";
@@ -9,20 +9,13 @@ import { Fragment } from "react";
 
 const navButtons = [
   {
-    label: "History",
-    path: "/"
+    label: "History"
   },
   {
     label: "Performance"
   },
   {
     label: "Dealers"
-  },
-  {
-    label: "News"
-  },
-  {
-    label: "Gallery"
   }
 ];
 
@@ -38,7 +31,7 @@ const NavBar = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Grid item style={{ flexDirection: "column" }} xs={4}>
+          <Grid item style={{ flexDirection: "column" }} xs={3}>
             <Link href="/">
               <a>
                 <img
@@ -50,7 +43,7 @@ const NavBar = () => {
             </Link>
           </Grid>
 
-          <Grid item justifyContent="flex-end" container spacing={3} xs>
+          <Grid item justifyContent="space-around" container spacing={0} xs>
             {navButtons.map((button, i) => (
               <Fragment key={i}>
                   <Grid item key={i}>
@@ -64,24 +57,21 @@ const NavBar = () => {
             ))}
           </Grid>
 
-          <Grid style={{ marginLeft: 60 }}>
-            <NavButton path="#" label="Login" />
-          </Grid>
-
           <Grid>
-            <Button
-              variant="contained"
-              color="secondary"
+            <ButtonBase
               style={{
-                background: "#8854D0",
                 borderRadius: 4,
                 textTransform: "none",
                 marginLeft: 20
               }}
               disableRipple
             >
-              Register
-            </Button>
+              <img
+                style={{ width: 35 }}
+                src="/menu.png"
+                alt=""
+              />
+            </ButtonBase>
           </Grid>
         </Grid>
       </Container>

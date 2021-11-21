@@ -15,15 +15,8 @@ export default function Home() {
 
         <Grid container spacing={2} style={{marginTop: 50, marginBottom: 70}}>
           <Grid item xs={6}>
-            <p className="title-head">Welcome to</p>
-
-            <h1 className="title">
-              <a href="https://nextjs.org">Next.js</a> with Mejik Art
-            </h1>
-
-            <p className="description">
-              Get started by editing <code>pages/index.js</code> then save and
-              publish again
+            <p style={{color: '#fff', fontFamily: 'Gotham', fontSize: 20}}>
+              Nissan has marketed vehicles under a few names, including the Datsun brand name. In 1999 Nissan entered a two way alliance with Renault S.A. of France, which now owns 43.4% of Nissan while Nissan holds 15% of Renault shares. Today Nissan also produces a range of luxury models branded as Infiniti.
             </p>
           </Grid>
           <Grid item xs={6}>
@@ -72,6 +65,8 @@ export default function Home() {
             font-size: 1.5rem;
             max-width: 584px;
             padding: 10px;
+            color: "#FFF";
+            font-family: "Gotham";
           }
 
           code {

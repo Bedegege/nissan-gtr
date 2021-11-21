@@ -60,6 +60,36 @@ const googleSansBoldItalic = {
   `
 };
 
+const bebas = {
+  fontFamily: "Bebas",
+  fontStyle: "normal",
+  fontDisplay: "swap",
+  fontWeight: "normal",
+  src: `
+    url('/fonts/Bebas-Regular.ttf') format("truetype")
+  `
+};
+
+const gothamMedium = {
+  fontFamily: "Gotham",
+  fontStyle: "normal",
+  fontDisplay: "swap",
+  fontWeight: 500,
+  src: `
+    url('/fonts/Gotham-Medium.ttf') format("truetype")
+  `
+};
+
+const vartekMedium = {
+  fontFamily: "Vartek",
+  fontStyle: "normal",
+  fontDisplay: "swap",
+  fontWeight: 500,
+  src: `
+    url('/fonts/Vartek-Medium.ttf') format("truetype")
+  `
+};
+
 const theme = createTheme({
   palette: {
     background: {
@@ -91,7 +121,7 @@ const theme = createTheme({
     h6: {
       fontWeight: "bold"
     },
-    fontFamily: "GoogleSans,Arial"
+    fontFamily: "Gotham,Bebas,Vartek,GoogleSans,Arial"
   },
   overrides: {
     MuiButton: {
@@ -110,6 +140,9 @@ const theme = createTheme({
     MuiCssBaseline: {
       "@global": {
         "@font-face": [
+          bebas,
+          gothamMedium,
+          vartekMedium,
           googleSans,
           googleSansMedium,
           googleSansMediumItalic,
