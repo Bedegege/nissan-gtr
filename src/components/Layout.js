@@ -12,11 +12,7 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     overflow: "hidden",
     display: "flex",
-    justifyContent: "center",
-    paddingTop: sectionMargin(theme.spacing()),
-    [theme.breakpoints.down("sm")]: {
-      paddingTop: 50
-    }
+    justifyContent: "center"
   }
 }));
 
@@ -27,7 +23,7 @@ const Layout = props => {
     <div className="background">
       <NavBar />
       <main className={classes.mainWrap} style={{ minHeight: "100vh" }}>
-        <Container maxWidth="lg">{props.children}</Container>
+        <Container maxWidth="xl" disableGutters>{props.children}</Container>
       </main>
       <style jsx>{`
         .background {

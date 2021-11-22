@@ -23,7 +23,7 @@ const NavBar = () => {
   return (
     <div className="container">
     <Grid container justifyContent="center">
-      <Container maxWidth="lg">
+      <Container maxWidth="xl" disableGutters>
         <Grid
           container
           style={{ paddingLeft: 32, paddingRight: 32 }}
@@ -31,7 +31,7 @@ const NavBar = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Grid item style={{ flexDirection: "column" }} xs={3}>
+          <Grid item style={{ flexDirection: "column" }} xs={4}>
             <Link href="/">
               <a>
                 <img
