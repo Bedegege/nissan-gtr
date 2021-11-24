@@ -9,13 +9,16 @@ import { Fragment } from "react";
 
 const navButtons = [
   {
-    label: "History"
+    label: "History",
+    path: "/history"
   },
   {
-    label: "Performance"
+    label: "Performance",
+    path: "/performance"
   },
   {
-    label: "Dealers"
+    label: "Dealers",
+    path: "/dealers"
   }
 ];
 
@@ -35,7 +38,7 @@ const NavBar = () => {
             <Link href="/">
               <a>
                 <img
-                  style={{ paddingTop: 20, paddingBottom: 14, width: 200 }}
+                  style={{ paddingTop: 20, paddingBottom: 14, width: 250 }}
                   src="/logo-skyline.png"
                   alt=""
                 />
@@ -84,7 +87,7 @@ const NavBar = () => {
           background-color: transparent;
           position: fixed;
           display: flex;
-          z-index: 99;
+          z-index: 300;
         }
       `}</style>
     </div>

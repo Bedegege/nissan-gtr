@@ -5,6 +5,11 @@ import Footer from "./Footer";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container } from "@material-ui/core";
 
+import {
+  Grid, 
+  Typography
+} from "@material-ui/core";
+
 const sectionMargin = margin => margin * 15;
 const useStyles = makeStyles(theme => ({
   mainWrap: {
@@ -27,7 +32,7 @@ const Layout = props => {
       </main>
       <style jsx>{`
         .background {
-          background-image: url('/skyline-homepage.png');
+          background-image: url(${props.background});
           background-position: center;
           background-size: cover;
         }

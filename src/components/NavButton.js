@@ -8,7 +8,7 @@ const NavButton = props => {
       <a style={{textDecoration: 'none', color: 'inherit', fontFamily: 'Bebas', fontSize: 26}}>
         { router.pathname === props.path ?
           <div
-            style={{ color: "#8854D0" }}
+            style={{ color: "#ED2024" }}
           >
             <span>{props.label}</span>
           </div> :

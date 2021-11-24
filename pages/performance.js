@@ -5,19 +5,11 @@ import {
   Typography,
   ButtonBase
 } from "@material-ui/core";
-import { useRouter } from 'next/router'
 
-export default function Home() {
-  const router = useRouter();
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-    router.push('/history');
-  }
-
+export default function Performance() {
   return (
     <>
-      <Layout background="/skyline-homepage.png">
+      <Layout background="/skyline-performance.png">
         <Head>
           <title>Web Landing</title>
           <link rel="icon" href="/favicon.ico" />
@@ -31,24 +23,13 @@ export default function Home() {
           </Grid>
           <Grid container item xs={8} justifyContent="flex-end">
             <Grid direction="column">
-              <Typography style={{color: '#fff', fontFamily: 'Vartek', fontSize: 100, fontWeight: 500, marginRight: 70, marginTop: 110, textAlign: 'right'}}>
-                SKY<span style={{color: '#ED2024'}}>LINE</span>
-              </Typography>
-              <ButtonBase disableRipple onClick={handleLogin} style={{ width: 150, height: 150, marginTop: 270, marginLeft: 300 }}>
-                <img
-                  style={{ width: 150, height: 150 }}
-                  src="/explore.png"
-                  alt=""
-                />
-              </ButtonBase>
-
-              <Typography style={{color: '#fff', fontFamily: 'Bebas', fontSize: 40, marginRight: 30, textAlign: 'right'}}>
+              <Typography style={{color: '#fff', fontFamily: 'Bebas', fontSize: 40, marginRight: 26, marginTop: 680, textAlign: 'right'}}>
                 <img
                   style={{ width: 300, height: 5, marginRight: 20, marginBottom: 10 }}
                   src="/strip.png"
                   alt=""
                 />
-                01
+                03
               </Typography>
             </Grid>
           </Grid>
