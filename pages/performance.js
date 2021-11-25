@@ -5,10 +5,24 @@ import {
   Typography,
   ButtonBase
 } from "@material-ui/core";
+import { useRouter } from 'next/router';
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 
 export default function Performance() {
+  const router = useRouter();
+
+  const handleWheelUp = (e) => {
+    e.preventDefault();
+    router.push('/history');
+  }
+
+  const handleWheelDown = (e) => {
+    e.preventDefault();
+    router.push('/dealers');
+  }
+
   return (
-    <>
+    <ReactScrollWheelHandler  upHandler={handleWheelUp} downHandler={handleWheelDown}>
       <Layout background="/skyline-performance.png">
         <Head>
           <title>Web Landing</title>
@@ -77,6 +91,6 @@ export default function Performance() {
         <div style={{position: 'relative', opacity: 0.3, background: '#3257A7', height: "200%", width: "35%", marginTop: -1000}}>
         </div>
       </Layout>
-    </>
+    </ReactScrollWheelHandler>
   );
 }

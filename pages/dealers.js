@@ -5,10 +5,19 @@ import {
   Typography,
   ButtonBase
 } from "@material-ui/core";
+import { useRouter } from 'next/router';
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 
 export default function Dealers() {
+  const router = useRouter();
+
+  const handleWheelUp = (e) => {
+    e.preventDefault();
+    router.push('/performance');
+  }
+
   return (
-    <>
+    <ReactScrollWheelHandler  upHandler={handleWheelUp}>
       <Layout background="/skyline-dealer.png">
         <Head>
           <title>Web Landing</title>
@@ -50,6 +59,6 @@ export default function Dealers() {
         <div style={{position: 'relative', opacity: 0.3, background: '#3257A7', height: "200%", width: "35%", marginTop: -1000}}>
         </div>
       </Layout>
-    </>
+    </ReactScrollWheelHandler>
   );
 }

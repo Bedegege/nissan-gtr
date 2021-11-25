@@ -5,10 +5,24 @@ import {
   Typography,
   ButtonBase
 } from "@material-ui/core";
+import { useRouter } from 'next/router';
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 
 export default function History() {
+  const router = useRouter();
+  
+  const handleWheelUp = (e) => {
+    e.preventDefault();
+    router.push('/');
+  }
+
+  const handleWheelDown = (e) => {
+    e.preventDefault();
+    router.push('/performance');
+  }
+
   return (
-    <>
+    <ReactScrollWheelHandler  upHandler={handleWheelUp} downHandler={handleWheelDown}>
       <Layout background="/skyline-history.png">
         <Head>
           <title>Web Landing</title>
@@ -41,6 +55,6 @@ export default function History() {
         <div style={{position: 'relative', opacity: 0.3, background: '#3257A7', height: "200%", width: "35%", marginTop: -1000}}>
         </div>
       </Layout>
-    </>
+    </ReactScrollWheelHandler>
   );
 }
