@@ -17,9 +17,21 @@ export default function Dealers() {
 
         <Grid container spacing={2} style={{position: 'relative', zIndex: 150}}>
           <Grid item xs={4}>
-            <Typography style={{color: '#fff', fontFamily: 'Gotham', fontSize: 20, fontWeight: 300, marginLeft: 20, marginTop: 280}}>
-              Nissan has marketed vehicles under a few names, including the Datsun brand name. In 1999 Nissan entered a two way alliance with Renault S.A. of France, which now owns 43.4% of Nissan while Nissan holds 15% of Renault shares. Today Nissan also produces a range of luxury models branded as Infiniti.
-            </Typography>
+            <Grid container xs={12} direction="row" style={{marginTop: 145}}>
+              <Typography style={{color: '#fff', fontFamily: 'Bebas', fontSize: 80, fontWeight: 300, marginLeft: 20}}>
+                DEALERS
+              </Typography>
+              <img
+                style={{ width: 60, objectFit: "contain", marginLeft: 40, marginTop: 5 }}
+                src="/dealer.png"
+                alt=""
+              />
+            </Grid>
+            <img
+              style={{ width: "95%", objectFit: "contain", marginLeft: 10, marginTop: 5 }}
+              src="/dealer-text.png"
+              alt=""
+            />
           </Grid>
           <Grid container item xs={8} justifyContent="flex-end">
             <Grid direction="column">

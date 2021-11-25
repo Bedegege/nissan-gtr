@@ -17,8 +17,11 @@ export default function History() {
 
         <Grid container spacing={2} style={{position: 'relative', zIndex: 150}}>
           <Grid item xs={4}>
-            <Typography style={{color: '#fff', fontFamily: 'Gotham', fontSize: 20, fontWeight: 300, marginLeft: 20, marginTop: 280}}>
-              Nissan has marketed vehicles under a few names, including the Datsun brand name. In 1999 Nissan entered a two way alliance with Renault S.A. of France, which now owns 43.4% of Nissan while Nissan holds 15% of Renault shares. Today Nissan also produces a range of luxury models branded as Infiniti.
+            <Typography style={{color: '#fff', fontFamily: 'Bebas', fontSize: 80, fontWeight: 300, marginLeft: 20, marginTop: 145}}>
+              HISTORY
+            </Typography>
+            <Typography style={{color: '#fff', fontFamily: 'Gotham', fontSize: 20, fontWeight: 300, marginLeft: 20, marginTop: 15}}>
+              Nissan’s beginnings go all the way back to 1911 when Masujiro Hashimoto founded Kwaishinsha Motor Car Works. The company produced its first car three years later and called it the DAT. The name ‘Nissan’ originated during the 1930s as an abbreviation used on the Tokyo stock market for Nippon Sangyo. In 1930, Aikawa merged Tobata Casting’s automobile parts department with DAT Motors. As Tobata Casting was a Nissan company, this was the beginning of Nissan’s automobile manufacturing.
             </Typography>
           </Grid>
           <Grid container item xs={8} justifyContent="flex-end">

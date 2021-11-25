@@ -17,9 +17,48 @@ export default function Performance() {
 
         <Grid container spacing={2} style={{position: 'relative', zIndex: 150}}>
           <Grid item xs={4}>
-            <Typography style={{color: '#fff', fontFamily: 'Gotham', fontSize: 20, fontWeight: 300, marginLeft: 20, marginTop: 280}}>
-              Nissan has marketed vehicles under a few names, including the Datsun brand name. In 1999 Nissan entered a two way alliance with Renault S.A. of France, which now owns 43.4% of Nissan while Nissan holds 15% of Renault shares. Today Nissan also produces a range of luxury models branded as Infiniti.
+            <Typography style={{color: '#fff', fontFamily: 'Bebas', fontSize: 80, fontWeight: 300, marginLeft: 20, marginTop: 145}}>
+              PERFORMANCE
             </Typography>
+            <Grid container xs={12} direction="row" style={{marginBottom: 60}}>
+              <img
+                style={{ width: 75, objectFit: "contain", marginLeft: 20 }}
+                src="/top-speed.png"
+                alt=""
+              />
+              <Grid container xs={6} direction="column" style={{ marginLeft: 10 }}>
+                <Typography style={{color: '#fff', fontFamily: 'Bebas', fontSize: 30, fontWeight: 300, marginLeft: 20, marginTop: 3}}>
+                  251 KPH
+                </Typography>
+                <Typography style={{color: '#fff', fontFamily: 'Bebas', fontSize: 30, fontWeight: 300, marginLeft: 20, marginTop: -10}}>
+                  0-60 KPH 2.4 S
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid container xs={12} direction="row" style={{marginBottom: 60}}>
+              <img
+                style={{ width: 75, objectFit: "contain", marginLeft: 20 }}
+                src="/weight.png"
+                alt=""
+              />
+              <Grid container xs={6} direction="column" style={{ marginLeft: 10 }}>
+                <Typography style={{color: '#fff', fontFamily: 'Bebas', fontSize: 30, fontWeight: 300, marginLeft: 20, marginTop: 15}}>
+                  1560-1607 KG
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid container xs={12} direction="row" style={{marginBottom: 60}}>
+              <img
+                style={{ width: 75, objectFit: "contain", marginLeft: 20 }}
+                src="/acceleration.png"
+                alt=""
+              />
+              <Grid container xs={6} direction="column" style={{ marginLeft: 10 }}>
+                <Typography style={{color: '#fff', fontFamily: 'Bebas', fontSize: 30, fontWeight: 300, marginLeft: 20, marginTop: 15}}>
+                  225 KPH 23.1 S
+                </Typography>
+              </Grid>
+            </Grid>
           </Grid>
           <Grid container item xs={8} justifyContent="flex-end">
             <Grid direction="column">

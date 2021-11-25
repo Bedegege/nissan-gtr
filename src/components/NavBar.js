@@ -23,6 +23,15 @@ const navButtons = [
 ];
 
 const NavBar = () => {
+  const [navActive, setNavActive] = React.useState(true);
+
+  const hideNav = (e) => {
+    if (navActive == true)
+      setNavActive(false);
+    else
+      setNavActive(true);
+  }
+
   return (
     <div className="container">
     <Grid container justifyContent="center">
@@ -47,7 +56,7 @@ const NavBar = () => {
           </Grid>
 
           <Grid item justifyContent="space-around" container spacing={0} xs>
-            {navButtons.map((button, i) => (
+            {navActive && navButtons.map((button, i) => (
               <Fragment key={i}>
                   <Grid item key={i}>
                     <NavButton
@@ -68,6 +77,7 @@ const NavBar = () => {
                 marginLeft: 20
               }}
               disableRipple
+              onClick={hideNav}
             >
               <img
                 style={{ width: 35 }}
